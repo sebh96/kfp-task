@@ -1,12 +1,8 @@
 from simple_kfp_task import Task
 
 def run():
-    from test import test
-    import os 
-
-    os.environ["MLFLOW_ENABLE_SYSTEM_METRICS_LOGGING"] = "true"
-
-    test()
+    from detectron import train
+    train()
 
 
 if __name__ == "__main__":
